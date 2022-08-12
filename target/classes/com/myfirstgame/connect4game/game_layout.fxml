@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfirstgame.connect4game.Controller">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="discPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox prefHeight="400.0" prefWidth="298.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="textFieldName1" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="190.0" promptText="Enter First Name" translateX="55.0" translateY="50.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textFieldName2" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" promptText="Enter Second Name" translateX="56.0" translateY="51.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="startButton" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="50.0" text="Set" textAlignment="CENTER" textFill="#29066b" translateX="130.0" translateY="55.0" />
+            <Label fx:id="PlayerName" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="430.0" text="Player One" textFill="#f5f3f3" translateY="100.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="434.0" prefHeight="38.0" prefWidth="434.0" text="Turn" textFill="#f2efef" translateY="100.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+         </children></VBox>
+   </children>
+</GridPane>
